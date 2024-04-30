@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="close_camera">Close Camera</string>
+    <string name="capture">Capture</string>
+    <string name="rotate_camera">Rotate Camera</string>
+</resources>

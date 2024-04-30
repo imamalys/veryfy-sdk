@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.SelfieResultFragment">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#EDEDED"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/capture_selfie_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp"
+                    android:id="@+id/ll_fr_score"
+                    android:background="#C3C3C3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Facial Match :"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:gravity="left"
+                        android:textSize="18sp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:layout_marginStart="2dp"
+                        android:textSize="18sp">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/ll_fn_findings"
+                    android:background="#C3C3C3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PNP Findings :"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:gravity="left"
+                        android:textSize="18sp">
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:text="NO DEREGATORY RECORD / INFORMATION"
+                        android:layout_marginStart="2dp"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#E91E1E"
+                    android:textSize="20sp"
+                    android:id="@+id/tv_under_score"
+                    android:visibility="gone"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Verification Failed!\nDocument Not Readable"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:id="@+id/tv_under_score_detail"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="You may try again by clicking on\nthis button."/>
+                <Button
+                    android:id="@+id/btn_try_again"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:visibility="gone"
+                    android:background="@drawable/rounded_button_blue_background"
+                    android:includeFontPadding="false"
+                    android:text="Try Again"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+                <Button
+                    android:id="@+id/btn_selfie_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_button_grey_background"
+                    android:includeFontPadding="false"
+                    android:text="@string/retry"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/rounded_button_blue_background"
+                    android:includeFontPadding="false"
+                    android:text="@string/done"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+</layout>

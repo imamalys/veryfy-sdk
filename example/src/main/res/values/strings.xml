@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">veryfy</string>
+    <string name="start">Start</string>
+    <string name="ocr_without_flash">OCR without Flash</string>
+    <string name="ekyc_without_flash">eKYC without Flash</string>
+    <string name="ocr_with_flash">OCR with Flash</string>
+    <string name="capture_id_front">Capture ID Front</string>
+    <string name="capture_id_back">Capture ID Back</string>
+    <string name="retry">Retry</string>
+    <string name="ocr">OCR</string>
+    <string name="fr">FR</string>
+    <string name="ekyc">EKYC</string>
+    <string name="done">Done</string>
+    <string-array name="document_array">
+        <item>Document Type</item>
+        <item>National ID</item>
+        <item>Driving License</item>
+        <item>SSS</item>
+        <item>UMID</item>
+        <item>Passport</item>
+        <item>PRC</item>
+        <item>Voter ID</item>
+        <item>Postal ID</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="capture_selfie">Capture Selfie</string>
+</resources>
